@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+img{
+    width: 100%;
+}
+:root{
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+}
+.master-container{
+    width: 80%;
+    margin:2.5em auto;
+}
+section.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    max-width: 300px;
+}
+.texts {
+    margin-top: 1.4em;
+    color:var(--Dark-Grayish-Magenta);
+    max-width: 400px;
+    line-height: 1.5;
+}
+.blocks{
+    margin-top: 2em;
+}
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin-bottom: 1em;
+    padding: .8em 2em .8em 1em;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+}
+.two{
+    margin-left: 4.5em;
+}
+.three{
+    margin-left: 9em;
+}
+.stars{
+    display: flex;
+}
+
+.star{
+    margin: 0 .3em;
+}
+.rated{
+    margin-left: 1em;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+}
+/* Section bottom */
+section.bottom{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.review-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: var(--Very-Dark-Magenta);
+    height: min-content;
+}
+.review{
+    margin: 1.5em;
+}
+.profile-pics{
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+img{
+    border-radius: 30px;
+}
+.up{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.name {
+    color: var(--White);
+    margin-bottom:5px ;
+}
+.buyer{
+    color: var(--Soft-Pink);
+}
+.down{
+    color: var(--White);
+    line-height: 1.5;
+    padding-right: .5em;
+}
+.second{
+    margin-top: 1.5em;
+    height: min-content;
+}
+.last{
+    margin-top: 3em;
+    height: min-content;
+}
+/* MEDIA QUERIES */
+@media(max-width:1070px){
+    .master-container{
+        width: 85%;
+    }
+}
+@media (max-width:978px){
+    .master-container{
+        width: 90%;
+    }
+}
+@media(max-width:878px){
+    .header h1{
+        font-size:2.3rem ;
+    }
+    .block{
+        padding:.5em 2em .6em .5em;;
+    }
+
+}
+@media(max-width:870px){
+    .block{
+        margin-left: 0;
+    }
+}
+@media(max-width:846px){
+    .texts{
+        max-width: 300px;
+    }
+}
+@media(max-width:776px){
+    .master-container{
+        width: 95%;
+    }
+}
+@media(max-width:740px){
+    section.top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header h1{
+        max-width: 800px;
+        text-align: center;
+    }
+    .texts{
+        max-width: 500px;
+    }
+    .blocks{
+        width: 100%;
+    }
+    .block{
+        width: 100%;
+        justify-content: left;
+    }
+    .stars{
+        margin: 0 0 0 10em;
+    }
+}
+@media(max-width:713px){
+    .review{
+        margin: 1em;
+    }
+    .profile-pics{
+        margin-right: 15px;
+    }
+}
+@media(max-width:663px){
+    .master-container{
+        width:90%
+    }
+    section.bottom{
+        grid-template-columns: 1fr 1fr;
+    }
+    .second{
+        margin-top:6em ;
+    }
+    .last{
+        margin-top: 0em;
+    }
+}
+@media(max-width:612px){
+    .stars{
+        margin: 0 0 0 6em;
+    }
+}
+@media(max-width:541px){
+    .stars{
+        margin: 0 0 0 4em;
+    }
+}
+@media(max-width:505px){
+    .stars{
+        margin: 0 0 0 2em;
+    }
+}
+@media(max-width:470px){
+    .block{
+        flex-direction: column;
+    }
+    .stars{
+        margin-bottom: .9em;
+    }
+}
+@media(max-width:460px){
+    section.bottom{
+        grid-template-columns: 1fr;
+    }
+    .review-container{
+        margin-top: 0;
+        padding-bottom: 0em;
+        margin-bottom: 1em;
+    }
+    .down p{
+        max-width: 700px;
+    }
+    .review{
+        margin: 1.5em;
+    }
+    .texts{
+        text-align: center;
+        max-width: 700px;
+    }
+}
